@@ -2,11 +2,11 @@
 
 ## _THE RULES_
 
-Game Type: Other
-Age: 3+
-Players: 2
-Tag: Accumulating Game
-The goal is to be the first player to win all 52 cards
+Game Type: Other<br>
+Age: 3+<br>
+Players: 2<br>
+Tag: Accumulating Game<br>
+How to Win: The goal is to be the first player to win all 52 cards
 
 ## THE DEAL
 The deck is divided evenly, with each player receiving 26 cards, dealt one at a time, face down. Anyone may deal first. Each player places their stack of cards face down, in front of them.
