@@ -21,6 +21,4 @@ The game ends when one player has won all the cards.
 
 ## WIREFRAME
 
-http://github.com/kaitbarnes/kaitsgameofwar/wireframe.pdf 
-
-**Need to scan and add to repository 
+<img src="wireframe/game_of_war_wireframe.jpeg">
