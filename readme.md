@@ -21,4 +21,4 @@ The game ends when one player has won all the cards.
 
 ## WIREFRAME
 
-<img src="wireframe/game_of_war_wireframe.jpeg">
+<img src="images/game_of_war_wireframe.jpeg">
