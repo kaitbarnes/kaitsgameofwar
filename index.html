@@ -4,67 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>LET'S PLAY THE GAME OF WAR!</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="js/script.js"></script>
-
+    <title>Let's Play The Game of War!!</title>
 </head>
-
+<script defer src="js/card-draw.js"></script>
+ <link rel="stylesheet" href="style.css">
 <body>
-<!---HEADER AND NAV SECTION-->
-///
-<div class="header">
-    <H1>WAR: A CARD GAME</H1>
-   <nav class="nav">
-   </nav><!--ends nav -->
-</div> <!--- ends header div-->
-
 <div class="container">
 
-<!---COMPUTER PLAYER SECTION-->
+<!-- // HEADER & RULES // -->
+    <header>
+        <h1>LET'S PLAY THE GAME OF WAR!</h1>
+        <button class="rules-btn">
+            Rules
+        </button>
+    </header>
+
+<!-- // COMPUTER SECTION //  -->
 <div class="computer-player">
-    <P><h2>Computer</h2></P>
-        <img src="images/computer.png" id="icon">
-</div><!--ends computer player div-->
-
-
-<!---CARDS AND CARD TABLE SECTION-->
-
-<div class="card-table">
-<div class="computer-cards">
-    <img src="images/playing-cards.png" id="icon">
-</div><!--ends computer cards div-->
-
-
-<div class="draw">
-<button>Draw</button>
+    <h2>COMPUTER</h2>
+    <div data-points="0">CPU Points:</div>
+    <div data-cards-remaining="26">Cards Remaining:</div>
+    <div data-victories="0">CPU Victories:</div>
 </div>
-<div class="player-cards">
-    <img src="images/playing-cards.png" id="icon">
-</div><!--ends player cards div-->
 
-</div><!--ends card-table div-->
+<!-- // COMPUTER CARDS SECTION // -->
+<div class="computer-draw">
+    <span class="card-draw">card</span>
+</div>
 
-
-<!---SCOREBOARD / DIALOG BOX SECTION-->
-<div class="scoreboard">
-
-</div><!--ends scoreboard div-->
-
-
-
-<!---PLAYER SECTION-->
-
-
+<!-- // PLAYER SECTION //  -->
 <div class="player">
-    <P><h2>You</h2></P>
-    <img src="images/player.png" id="icon">
-</div><!--ends player div -->
+    <h2>YOU</h2>
+    <div data-points="0">CPU Points:</div>
+    <div data-cards-remaining="26">Cards Remaining:</div>
+    <div data-victories="0">Your Victories:</div>
+</div>
 
-</div><!--ends container div -->
+
+<!-- // PLAYER CARDS SECTION // -->
+<div class="player-draw">
+    <span class="card-draw">card</span>
+</div>
+
+<!-- // DRAW A CARD // -->
+
+<div class="footer">
+    <button class="draw-btn">Draw a Card </button>
+</div>
+
+
+</div> <!--CONTAINER ENDS-->
+
 
 </body>
-
-
-</html>
