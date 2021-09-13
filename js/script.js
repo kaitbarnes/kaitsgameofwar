@@ -39,20 +39,3 @@ function shuffle(deck){
 
 // 2.1 - create a function to render the deck. This actually makes the cards appear on the page. 
 
-function renderDeck(deck){
-    document.querySelector('.deck').innerHTML = "";
-    for(let i = 0; i < deck.length; i++){
-        let card = document.createElement("div");
-        let value = document.createElement("div");
-        let suit = document.createElement("div");
-        card.className = "card";
-        value.className = "value";
-        suit.clasName = "suit" + deck[i].Suit;
-
-        value.innerHTML = deck[i].Value; 
-        card.appendChild(value);
-        card.appendChild(suit);
-        document.querySelector('.deck').appendChild(card); 
-
-    }
-}
