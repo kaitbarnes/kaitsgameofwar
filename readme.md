@@ -22,3 +22,15 @@ The game ends when one player has won all the cards.
 ## WIREFRAME
 
 <img src="images/game_of_war_wireframe.jpeg">
+
+## SCREENSHOTS OF GAME 
+
+## TECHNOLOGIES USED TO BUILD GAME
+- HTML <br>
+-CSS<br>
+-Javascript<br>
+
+## READY TO PLAY? 
+<a href=http://github.com/kaitbarnes/kaitsgameofwar>Ready to play? Click here!</a><br>
+
+## PLANNED FUTURE ENHANCEMENTS
