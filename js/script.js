@@ -1,10 +1,7 @@
-// deck of cards
-// 52 cards 
-// 4 types - spaces, diamonds, clubs, hearts
-// 13 ranks
+/// PART ONE: CREATE A DECK OF CARDS.
+// a deck of cards has 52 cards including 13 values (#1-#10, king, queen, jack) and four suits (spades, diamonds, clubs, and hearts)
 
-// three arrays for suits, values, and a deck to hold cards // 
-
+// 1.1 create three arrays for suits, values, and the deck itself
 
 const suits = ['hearts', 'spades', 'diamonds', 'clubs']; 
 
@@ -12,7 +9,7 @@ const values = ['ace', 'jack', 'queen', 'king','2', '3', '4', '5', '6', '7', '8'
 
 let deck = [];
 
-// function with a for loop to create a deck of cards // 
+// 1.2 create a function that returns the deck
 
 function getDeck(){
     const deck = new Array(); 
@@ -24,19 +21,38 @@ function getDeck(){
 }
     return deck; 
 }; 
+ 
 
-console.log(getDeck()); 
+// PART TWO: Adding functionality and rendering the cards
 
+// 2.1 - create a function to shuffle the deck. This function uses math.random and goes up to 1,000 turns. It shuffles the cards to the playerDraw and computerDraw card slots on the page. 
 
-// function to shuffle cards
 function shuffle(deck){
     for(let i = 0; i < 1000; i++){
-        const playerDraw = Math.floor((Math.random() * deck.length)); 
-        const computerDraw = Math.floor((Math.random() * deck.length)); 
-        const temp = deck[playerDraw];
+        let playerDraw = Math.floor((Math.random() * deck.length)); 
+        let computerDraw = Math.floor((Math.random() * deck.length)); 
+        let temp = deck[playerDraw];
         deck[playerDraw] = deck[computerDraw];
         deck[computerDraw] = temp; 
     }
-}
+};
 
-// function to make cards appear on page 
+// 2.1 - create a function to render the deck. This actually makes the cards appear on the page. 
+
+function renderDeck(deck){
+    document.querySelector('.deck').innerHTML = "";
+    for(let i = 0; i < deck.length; i++){
+        let card = document.createElement("div");
+        let value = document.createElement("div");
+        let suit = document.createElement("div");
+        card.className = "card";
+        value.className = "value";
+        suit.clasName = "suit" + deck[i].Suit;
+
+        value.innerHTML = deck[i].Value; 
+        card.appendChild(value);
+        card.appendChild(suit);
+        document.querySelector('.deck').appendChild(card); 
+
+    }
+}
