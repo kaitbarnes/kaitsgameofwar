@@ -3,6 +3,26 @@
 // 4 types - spaces, diamonds, clubs, hearts
 // 13 ranks 
 
+// // need three arrays to sort cards //
+// const suits = ['h', 'c', 'd', 's'];
+// const ranks = ['2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k', 'a']; 
+// const deck = []; 
+
+// // for loop to count the suits //
+// for(let suitCount = 0; suitCount < 4; suitCount++){
+//     console.log(suits[suitCount]);
+// }
+// // for loop to count the ranks //
+// for(let rankCount = 0; rankCount < 13; rankCount++){
+//     console.log(ranks[rankCount]); 
+//     //nested loop to get them to work together // 
+//     deck.push(ranks[rankCount] + suits[suitCount]); 
+// }
+
+// console.log(deck); 
+
+///
+
 // three arrays for suits, values, and a deck to hold cards // 
 
 const suits = ['hearts', 'spades', 'diamonds', 'clubs']; 
