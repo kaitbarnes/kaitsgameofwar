@@ -7,15 +7,15 @@ const suits = ['hearts', 'spades', 'diamonds', 'clubs'];
 
 const values = ['ace', 'jack', 'queen', 'king','2', '3', '4', '5', '6', '7', '8', '9', '10'];
 
-let deck = [];
+// let deck = [];
 
 // 1.2 create a function that returns the deck
 
-function getDeck(){
-    const deck = new Array(); 
-    for (let s = 0; s < suits.length; s++){
-    for(let v = 0; v < values.length; v++){
-        let card = {Value: values[v], Suit: suits[s]};
+function newDeck(){
+    let deck = new Array(); 
+    for (let suit = 0; suit < suits.length; suit++){
+        for(let value = 0; value < values.length; value++){
+        let card = {Suit: suits[suit], Value: values[value]};
         deck.push(card); 
     }
 }
@@ -25,17 +25,24 @@ function getDeck(){
 
 // PART TWO: Adding functionality and rendering the cards
 
-// 2.1 - create a function to shuffle the deck. This function uses math.random and goes up to 1,000 turns. It shuffles the cards to the playerDraw and computerDraw card slots on the page. 
+// 2.1 - create a function to shuffle the deck.  
 
 function shuffle(deck){
     for(let i = 0; i < 1000; i++){
-        let playerDraw = Math.floor((Math.random() * deck.length)); 
-        let computerDraw = Math.floor((Math.random() * deck.length)); 
-        let temp = deck[playerDraw];
-        deck[playerDraw] = deck[computerDraw];
-        deck[computerDraw] = temp; 
+        let index1 = Math.floor((Math.random() * deck.length)); 
+        let index2 = Math.floor((Math.random() * deck.length)); 
+        let tempVariable = deck[index1];
+        deck[index1] = deck[index2];
+        deck[index2] = tempVariable; 
     }
 };
 
-// 2.1 - create a function to render the deck. This actually makes the cards appear on the page. 
+// 2.1 - create a function to make cards appear on page
 
+// create new deck//
+
+let deck = newDeck();
+
+//shuffle cards//
+
+shuffle(deck); 
