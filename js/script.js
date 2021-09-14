@@ -58,28 +58,63 @@ console.log(cardImages);
 
 /*----- app's state (variables) -----*/
 
-let draw // deal cards when clicking button
+// let shuffle // randomizes the cards 
 
-let splitDeck // splits deck among computer and player, each gets 26 cards
+// let draw // deal cards when clicking button
 
-let displayFaceCard // shows new face card every time a person draws
+// let splitDeck // splits deck among computer and player, each gets 26 cards
 
-let displayScore // displays computer vs player score
+// let displayFaceCard // shows new face card every time a person draws
 
-let war // remains null until game reaches point where war is declared 
+// let displayScore // displays computer vs player score
 
-let winner // remains null until game is over
+// let war // remains null until game reaches point where war is declared 
 
-let reset // restart game
+// let winner // remains null until game is over
+
+// let reset // restart game
 
 /*----- cached element references -----*/
 
+const drawEls = {
+    computer: document.querySelector('.computerDraw'),
+    player: document.querySelector('.playerDraw')
+}
+
+const splitDeckEls = {
+    computer: document.querySelector('.computerStack'),
+    player: document.querySelector('.playerStack')
+}
+
+const faceCardEls = {
+    computer: {
+        imagesEl: document.querySelector('.computerFaceCard > img')
+    },    
+    player:  {
+        imagesEl: document.querySelector('.playerFaceCard > img')
+    }    
+}
+const winnerEls = {
+    computer: document.querySelector('.computerWon'),
+    player: document.querySelector('.playerWon')
+}
+
 /*----- event listeners -----*/
+
+document.querySelector('.draw-btn')
+    .addEventListener('click', draw);
+    
+    document.querySelector('.reset-btn')
+    .addEventListener('click', reset);
 
 
 /*----- functions -----*/
 
-// Function 1: Create a New Deck
+//Function: Initialize game
+
+
+
+// Function - Create a New Deck
 
 function newDeck(){
     let deck = new Array(); 
@@ -92,8 +127,7 @@ function newDeck(){
     return deck; 
 }; 
  
-
-//Function 2: Shuffle Deck
+//Function - Shuffle Deck
 
 function shuffle(deck){
     for(let i = 0; i < 1000; i++){
@@ -105,20 +139,21 @@ function shuffle(deck){
     }
 };
 
-//Function: Draw a Card, Assign Value to Card
+//Function - Draw a Card, Assign Value to Card
 
-//Function: Split Deck Between Computer & PLayer
+//Function - Split Deck Between Computer & Player
 
-//Function: Player Turn
 
-//Function: Computer Turn
+// Function: Player Turn
 
-//Function: Compare Cards
+// Function: Computer Turn
 
-//Function: Play War
+// Function: Compare Cards
 
-//Function: Declare a Winner
+// Function: Play War
 
-//Function: Update Score
+// Function: Declare a Winner
 
-//Function: Reset Game 
+// Function: Update Score
+
+// Function: Reset

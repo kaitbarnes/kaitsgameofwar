@@ -21,32 +21,35 @@
 <!-- // COMPUTER SECTION //  -->
 <div class="computer-player">
     <h2>COMPUTER</h2>
-    <div data-points="0">CPU Points:</div>
+    <div class="computerWon" data-points="0">CPU Points:</div>
     <div data-cards-remaining="26">Cards Remaining:</div>
 </div>
 
 <!-- // COMPUTER CARDS SECTION // -->
-<div class="computer-cards deck">
-    <div class="computerDraw card">CARD?</div>
+<div class="computer-cards">
+    <div class="computerStack deck"><img></div>
+    <div class="computerFaceCard card"><img></div>
 </div>
 
 <!-- // PLAYER SECTION //  -->
 <div class="player">
     <h2>YOU</h2>
-    <div data-points="0">CPU Points:</div>
+    <div class="playerWon" data-points="0">CPU Points:</div>
     <div data-cards-remaining="26">Cards Remaining:</div>
 </div>
 
 
 <!-- // PLAYER CARDS SECTION // -->
-<div class="player-cards deck">
-    <div class="playerDraw card">card</div>
+<div class="player-cards">
+    <div class="playerStack deck"><img></div>
+    <div class="playerFaceCard card"><img></div>
 </div>
 
-<!-- // DRAW A CARD // -->
+<!-- // DRAW A CARD & RESET THE GAME // -->
 
 <div class="footer">
-    <button class="draw-btn">Draw a Card </button>
+    <button class="draw-btn">Draw a Card</button>
+    <button class="reset-btn">New Game</button>
 </div>
 
 
