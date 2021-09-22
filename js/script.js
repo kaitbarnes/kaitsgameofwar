@@ -56,23 +56,23 @@ const cardImages = {
 console.log(cardImages); 
 
 
-/*----- app's state (variables) -----*/
+// /*----- app's state (variables) -----*/
 
-// let shuffle // randomizes the cards 
+let shuffle; // randomizes the cards 
 
-// let draw // deal cards when clicking button
+let draw; // deal cards when clicking button
 
-// let splitDeck // splits deck among computer and player, each gets 26 cards
+let splitDeck; // splits deck among computer and player, each gets 26 cards
 
-// let displayFaceCard // shows new face card every time a person draws
+let displayFaceCard; // shows new face card every time a person draws
 
-// let displayScore // displays computer vs player score
+let displayScore; // displays computer vs player score
 
-// let war // remains null until game reaches point where war is declared 
+let war; // remains null until game reaches point where war is declared 
 
-// let winner // remains null until game is over
+let winner; // remains null until game is over
 
-// let reset // restart game
+// let reset; // restart game
 
 /*----- cached element references -----*/
 
@@ -99,13 +99,14 @@ const winnerEls = {
     player: document.querySelector('.playerWon')
 }
 
+// let computerWon, computerStack, computerFaceCard, playerWon, playerStack, playerFaceCard; 
+
 /*----- event listeners -----*/
 
 document.querySelector('.draw-btn')
     .addEventListener('click', draw);
     
-    document.querySelector('.reset-btn')
-    .addEventListener('click', reset);
+document.querySelector('.reset-btn').addEventListener('click', reset);
 
 
 /*----- functions -----*/
